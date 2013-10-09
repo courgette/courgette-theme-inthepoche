@@ -573,36 +573,6 @@ form button:hover, form button:focus, form input[type="submit"]:hover, form inpu
     margin-left: 0.5em;
   }
 
-  #links li a, #article_toolbar a {
-    left: -100px;
-    top:auto;
-    -webkit-transition: left 0.3s ease;
-    -moz-transition: left 0.3s ease;
-    transition: left 0.3s ease;
-  }
-
-  #menuContainer.open li a, #article_toolbar.open a {
-  top: auto;
-  left:0;
-    -webkit-transition: top 0.3s ease;
-    -moz-transition: top 0.3s ease;
-    transition: top 0.3s ease;
-    -webkit-transition-delay:0.25ms;
-    -moz-transition-delay:0.25ms;
-    transition-delay:0.25ms;
-  }
-
-  #menuContainer.open, #article_toolbar.open {
-    border-width:80px 80px 80px 120px;
-    -webkit-transition: border-width 0.3s, background-color 0.3s;
-    -moz-transition: border-width 0.3s, background-color 0.3s;
-    transition: border-width 0.3s, background-color 0.3s;
-  }
-
-  #menuContainer.open ul, #article_toolbar.open ul {
-    top: 100px;
-  }
-
 }
 
 @media screen and (max-width: 500px) {
