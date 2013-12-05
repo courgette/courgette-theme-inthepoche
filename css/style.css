@@ -614,4 +614,7 @@ form button:hover, form button:focus, form input[type="submit"]:hover, form inpu
   footer p:first-child {
     float: none;
   }
+  footer {
+    position:static;
+  }
 }
