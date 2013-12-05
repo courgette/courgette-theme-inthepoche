@@ -535,6 +535,33 @@ form button:hover, form button:focus, form input[type="submit"]:hover, form inpu
     height: 100%;
   }
 
+  body > header {
+    position: static;
+  }
+
+  #main {
+    padding: 0 0.5em 6em;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #main:before {
+    content:none;
+  }
+
+  #menuContainer, #article_toolbar, #menuContainer ul, #article_toolbar ul {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  #links li a, #article_toolbar a {
+    position: static;
+    color: #000;
+  }
+
   #links li a {
     padding: 1em;
     min-width: 120px;
@@ -544,41 +571,6 @@ form button:hover, form button:focus, form input[type="submit"]:hover, form inpu
   #article_toolbar li {
     margin-bottom: 1em;
     margin-left: 0.5em;
-    display: block;
-  }
-
-  #links li a, #article_toolbar a {
-    left: -100px;
-    top:auto;
-    -webkit-transition: left 0.3s ease;
-    -moz-transition: left 0.3s ease;
-    transition: left 0.3s ease;
-  }
-
-  #menuContainer.open li a, #article_toolbar.open a {
-  top: auto;
-  left:0;
-    -webkit-transition: top 0.3s ease;
-    -moz-transition: top 0.3s ease;
-    transition: top 0.3s ease;
-    -webkit-transition-delay:0.25ms;
-    -moz-transition-delay:0.25ms;
-    transition-delay:0.25ms;
-  }
-
-  #menuContainer.open, #article_toolbar.open {
-    border-width:80px 80px 80px 120px;
-    -webkit-transition: border-width 0.3s, background-color 0.3s;
-    -moz-transition: border-width 0.3s, background-color 0.3s;
-    transition: border-width 0.3s, background-color 0.3s;
-  }
-
-  #menuContainer.open ul, #article_toolbar.open ul {
-    top: 100px;
-  }
-
-  #main {
-    padding: 6em 0.5em;
   }
 
 }
@@ -598,17 +590,6 @@ form button:hover, form button:focus, form input[type="submit"]:hover, form inpu
   }
   .entrie h2:after {
     content:none;
-  }
-  .menuOpen #main:before { content:none; }
-  #main:before {
-    content:"";
-    background: rgba(255,255,255,0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 6em;
   }
 
   .messages {
@@ -632,5 +613,8 @@ form button:hover, form button:focus, form input[type="submit"]:hover, form inpu
 
   footer p:first-child {
     float: none;
+  }
+  footer {
+    position:static;
   }
 }
